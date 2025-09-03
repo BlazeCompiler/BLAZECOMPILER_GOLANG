@@ -1,5 +1,5 @@
-# Use the official Node.js image as the base
-FROM node:16
+# Use Node.js LTS on Debian Bullseye
+FROM node:20-bullseye-slim
 
 # Install Golang and necessary build tools
 RUN apt-get update && apt-get install -y golang build-essential
